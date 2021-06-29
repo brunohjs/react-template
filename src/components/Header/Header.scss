@@ -1,0 +1,88 @@
+@import "../../index.scss";
+
+.nav {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    transition-duration: .5s;
+    .logo {
+        width: 120px;
+        margin: 5px;
+        display: grid;
+        cursor: pointer;
+        .logo-img {
+            height: 40px;
+            width: 100%;
+            transition-duration: 1s;
+        }
+        .title {
+            font-size: 9px;
+            font-weight: bold;
+            color: $primary;
+            text-align: center;
+            text-shadow: 1px 1px $secondary;
+            transition-duration: .5s;
+        }
+    }
+    .nav-buttons {
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin: 10px;
+        .nav-item {
+            a {
+                font-size: 14px;
+                font-weight: bold;
+                text-shadow: 2px 2px 5px $secondary;
+                color: $primary;
+                transition-duration: .5s;
+                &:hover {
+                    color: $primary-t;
+                }
+            }
+        }
+        .budget-btn {
+            a {
+                border-radius: 10px;
+                &:hover {
+                    background-color: $basic;
+                    color: $primary;
+                    text-shadow: none;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.solid {
+    background-color: $primary;
+    box-shadow: 0 2px 10px 0px #00000077;
+    .title {
+        color: $basic !important;
+    }
+    .nav-buttons {
+        .nav-item {
+            a {
+                font-size: 14px;
+                font-weight: bold;
+                text-shadow: 2px 2px 5px $secondary;
+                color: $basic;
+                &:hover {
+                    color: $basic-t;
+                }
+            }
+        }
+        .budget-btn {
+            a {
+                border-radius: 10px;
+                &:hover {
+                    background-color: $basic;
+                    color: $primary;
+                    text-shadow: none;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
